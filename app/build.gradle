@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'maven-publish'
 }
 
 android {
@@ -36,17 +35,6 @@ android {
         viewBinding true
     }
 
-}
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                groupId = 'com.github.smartrk'
-                artifactId = 'Image-Video-File-Picker'
-                version = "1.0"
-            }
-        }
-    }
 }
 
 dependencies {
