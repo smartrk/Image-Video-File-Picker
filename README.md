@@ -104,7 +104,6 @@ Support Android 6 to 14 version
 ```
 
 
-## List contains URI,PATH and FILE and TYPE
 
 
 ## Gradle dependency
