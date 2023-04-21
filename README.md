@@ -110,6 +110,6 @@ Support Android 6 to 14 version
 
 ```sh
 dependencies { 
-         implementation 'com.github.smartrk:Image-Video-File-Picker:1.0' 
+         implementation 'com.github.smartrk:Image-Video-File-Picker:1.3' 
 }
 ```
