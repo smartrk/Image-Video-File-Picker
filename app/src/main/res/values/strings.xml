@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ImageVideoFilePicker</string>
+    <string name="camera_only">Camera only</string>
+    <string name="image_only">Image Only</string>
+    <string name="gallery_only">Gallery only</string>
+    <string name="video_only">Video only</string>
+    <string name="multiple_images">Multiple Images</string>
+    <string name="multiple_video">Multiple Video</string>
+    <string name="image_and_video">Image and video</string>
+    <string name="multiple_files">Multiple Files</string>
+    <string name="file_only">File only</string>
+    <string name="photo_capture">Photo capture</string>
+    <string name="video_capture">Video Capture</string>
+    <string name="image">Image</string>
+    <string name="video">Video</string>
+    <string name="image_and_video_selection">Image and video selection</string>
+</resources>

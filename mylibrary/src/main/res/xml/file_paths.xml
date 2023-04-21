@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--    <external-path name="temp_images" path="Android/data/com.example.demoimagepicker.app/files/Pictures" />-->
+    <!--    <external-files-path name="my_images" path="/" />-->
+
+    <external-files-path
+        name="my_images"
+        path="/" />
+    <files-path
+        name="dias"
+        path="/" />
+    <external-path name="external_files" path="."/>
+
+</paths>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="custom_style_dialog_galley" parent="android:Theme.Light">
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:windowBackground">#4d000000</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+</resources>
