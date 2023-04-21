@@ -13,7 +13,7 @@ import java.util.ArrayList
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityMainBinding
-    private lateinit var getImageFilePicker: Picker
+    private lateinit var picker: Picker
     private var stringBuilder = StringBuilder()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        getImageFilePicker = Picker(this)
+        picker = Picker(this)
 
         binding.clickListener = this
 
@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(p0: View?) {
         when (p0) {
             binding.btnMultipleImage -> {
-                getImageFilePicker.pickImage(
+                picker.pickImage(
                     multipleSelection = true,
                     originalFilesCallBack = { list ->
                         clearAndSetUpText(list)
@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     })
             }
             binding.btnGallery -> {
-                getImageFilePicker.pickImage(
+                picker.pickImage(
                     originalFilesCallBack = { list ->
                         clearAndSetUpText(list)
                     }, compressedFilesCallBack = { list ->
@@ -47,18 +47,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     })
             }
             binding.btnVideo -> {
-                getImageFilePicker.pickVideo(callBack = { list ->
+                picker.pickVideo(callBack = { list ->
                     clearAndSetUpText(list)
                 })
             }
             binding.btnMultipleVideo -> {
-                getImageFilePicker.pickMultipleVideo(callBack = { list ->
+                picker.pickMultipleVideo(callBack = { list ->
                     clearAndSetUpText(list)
                 })
             }
 
             binding.btnCamera -> {
-                getImageFilePicker.captureImage(
+                picker.captureImage(
                     originalFilesCallBack = { list ->
                         clearAndSetUpText(list)
                     }, compressedFilesCallBack = { list ->
@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     })
             }
             binding.btnAll -> {
-                getImageFilePicker.pickImageAndVideo(
+                picker.pickImageAndVideo(
                     multipleSelection = true,
                     originalFilesCallBack = { list ->
                         clearAndSetUpText(list)
@@ -75,21 +75,21 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     })
             }
             binding.btnFile -> {
-                getImageFilePicker.pickFile(
+                picker.pickFile(mimeTypes = arrayOf("application/pdf", "text"),
                     callBack = { list ->
                         clearAndSetUpText(list)
                     }
                 )
             }
             binding.btnMultipleFile -> {
-                getImageFilePicker.pickMultipleFile(
+                picker.pickMultipleFile(
                     callBack = { list ->
                         clearAndSetUpText(list)
                     }
                 )
             }
             binding.btnVideoCapture -> {
-                getImageFilePicker.captureVideo(
+                picker.captureVideo(
                     callBack = { list ->
                         clearAndSetUpText(list)
                     }
