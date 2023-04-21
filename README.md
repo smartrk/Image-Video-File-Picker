@@ -81,7 +81,8 @@ Support Android 6 to 14 version
                         // return only one file
                     }
                 )
-```  * Capture Video from camera
+```  
+* Capture Video from camera
  ```sh
                   picker.pickMultipleFile(mimeTypes = arrayOf("application/pdf", "text"),
                     callBack = { list ->
@@ -89,7 +90,7 @@ Support Android 6 to 14 version
                     }
                 )
 ```
-```  * Pick image and video 
+* Pick image and video 
  ```sh
                   picker.pickImageAndVideo(
                     multipleSelection = true,
