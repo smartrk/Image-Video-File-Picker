@@ -36,17 +36,19 @@ android {
         viewBinding true
     }
 
-
 }
-publishing {
-    publications {
-        maven(MavenPublication) {
-            groupId = 'com.github.smartrk'
-            artifactId = 'Image-Video-File-Picker'
-            version = "1.0"
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                groupId = 'com.github.smartrk'
+                artifactId = 'Image-Video-File-Picker'
+                version = "1.0"
+            }
         }
     }
 }
+
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.10.0'
