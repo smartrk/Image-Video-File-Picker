@@ -12,6 +12,7 @@ Support Android 6 to 14 version
 - Single and multiple selection support
 - Image compress
 - Auto handle permission
+- List contines path,file and uri
 
 - No Additional Code Required
 - Fully Customizable
