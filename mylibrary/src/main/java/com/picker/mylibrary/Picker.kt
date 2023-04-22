@@ -2,9 +2,11 @@ package com.picker.mylibrary
 
 import android.Manifest
 import android.app.Dialog
+import android.content.ComponentName
 import android.content.ContentResolver
 import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
 import android.provider.Settings
@@ -56,6 +58,8 @@ open class Picker(
     private val fileList = kotlin.collections.ArrayList<MediaModel>()
 
     init {
+
+
         fileSelectionLauncher =
             activity.registerForActivityResult(ActivityResultContracts.StartActivityForResult())
             { result: ActivityResult ->
@@ -349,7 +353,7 @@ open class Picker(
 
         }
 
-        fileList.forEach {item->
+        fileList.forEach { item ->
             val cR: ContentResolver = activity.contentResolver
             val type: String? = cR.getType(item.uri)
             type?.let {
