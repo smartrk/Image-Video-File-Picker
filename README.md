@@ -12,7 +12,7 @@ Support Android 6 to 14 version
 - Single and multiple selection support
 - Image compress
 - Auto handle permission
-- List contines path,file and uri
+- List contains path,file and uri
 
 - No Additional Code Required
 - Fully Customizable
@@ -110,6 +110,6 @@ Support Android 6 to 14 version
 
 ```sh
 dependencies { 
-         implementation 'com.github.smartrk:Image-Video-File-Picker:1.0' 
+         implementation 'com.github.smartrk:Image-Video-File-Picker:1.3' 
 }
 ```
