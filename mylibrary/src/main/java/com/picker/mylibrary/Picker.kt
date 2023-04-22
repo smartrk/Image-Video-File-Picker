@@ -7,8 +7,6 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Build
-import android.os.Environment
-import android.provider.MediaStore
 import android.provider.Settings
 import android.util.Log
 import android.view.Window
@@ -19,7 +17,6 @@ import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.app.ActivityCompat.startActivityForResult
 import androidx.core.net.toUri
 import com.permissionx.guolindev.PermissionX
 import com.picker.mylibrary.FileUtils.getUriFromFile
@@ -30,7 +27,7 @@ import kotlinx.coroutines.withContext
 import java.io.File
 
 
-class Picker(
+open class Picker(
     private var activity: AppCompatActivity
 ) {
     private var settingCallBack: (() -> Unit)? = null
