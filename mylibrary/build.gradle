@@ -39,9 +39,8 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                groupId = 'com.github.smartrk'
                 artifactId = 'Image-Video-File-Picker'
-                version = "1.4"
+                version = "1.5"
             }
         }
     }
