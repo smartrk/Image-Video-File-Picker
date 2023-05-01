@@ -106,10 +106,20 @@ Support Android 6 to 14 version
 
 
 
-## Gradle dependency
+## Implementation
 
 ```sh
-dependencies { 
-         implementation 'com.github.smartrk:Image-Video-File-Picker:1.3' 
-}
+- Import mypicker module in your project
+
+- Add below code in your manifest
+    <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.picker.mypicker.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
 ```
